@@ -27,7 +27,7 @@ async def on_message(message):
                 result = f'{target:08b}'
                 response = '`result: ' + result[0:4] + ' ' + result[4:8] + '`'
             else:
-                response = '`Your number is out of range.`'
+                response = '`Your number is out of range(0-255).`'
         else:
             response = '`This is not a number or you wrote it with wrong format.`'
         await message.channel.send(response)
