@@ -29,7 +29,7 @@ async def on_message(message):
             else:
                 response = '`Your number is out of range.`'
         else:
-            response = '`This is not a number. !!`'
+            response = '`This is not a number or you wrote it with wrong format.`'
         await message.channel.send(response)
 
 client.run(TOKEN)
